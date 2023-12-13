@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Project</title>
+   <!-- <link rel="stylesheet" href="/stylesheet.css"> -->
+   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+
+     <script src="/index.js" defer></script>
+
+     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+     <style>
+        #map { 
+            height: 400px;
+            background-color: #ccc;
+        }
+        #map::before{
+            content: 'LOADING';
+            font-size: 3em;
+            text-align: center;
+            width: 100%;
+            position: absolute;
+            margin-top: 3em;
+        }
+        .leaflet-popup-content-wrapper {
+            width: 100%;
+        }
+      </style>
+</head>
+<body>
+    <div id="map"></div>
+<form action="dropdownMenu">
+    <label for="coffee">Coffee Shops</label> <br>
+    <input type="text" id="coffee" name="coffee" value="Search for Coffee Shops Nearby or Outisde of your comfort zone"> <br>
+    <label for="restaurant">Restaurants</label> <br>
+    <input type="text" id="restaurant" name="coffee" value="Search for Restaurants near you"> <br>
+    <label for="hotel">Hotels</label> <br>
+    <input type="text" id="hotel" name="hotel" value="Search for Hotels Nearby"> <br>
+</form>
+
+    
+    
+
+    <!-- <script src="/index.js"></script> -->
+</body>
+</html>
